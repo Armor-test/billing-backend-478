@@ -1,0 +1,41 @@
+# CODEOWNERS file for billing-backend-478
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-logging @Armor-test/dept-billing @Armor-test/unit-test
+
+# Directory ownership
+/test/ @Armor-test/squad-mobile @Armor-test/dept-reliability @Armor-test/dept-notifications
+/ui/ @Armor-test/squad-frontend @Armor-test/unit-devops @Armor-test/squad-cloud
+/tests/ @Armor-test/dept-identity @Armor-test/squad-ml @Armor-test/dept-ui
+/services/ @Armor-test/dept-release @Armor-test/team-notifications
+/auth/ @Armor-test/dept-security @Armor-test/dept-notifications
+/pkg/ @Armor-test/unit-cloud @Armor-test/squad-api @Armor-test/squad-ux
+/lib/ @Armor-test/dept-logging @Armor-test/dept-automation
+/assets/ @Armor-test/dept-billing @Armor-test/grp-integration
+/utils/ @Armor-test/grp-api @Armor-test/squad-mobile
+/core/ @Armor-test/squad-qa @Armor-test/squad-tooling @Armor-test/squad-api
+/examples/ @Armor-test/dept-reliability @Armor-test/squad-cache @Armor-test/grp-reporting
+/modules/ @Armor-test/grp-ui @Armor-test/dept-reliability
+/security/ @Armor-test/squad-payments @Armor-test/squad-mobile @Armor-test/unit-devops
+/plugins/ @Armor-test/squad-research @Armor-test/dept-reliability
+/hooks/ @Armor-test/team-frontend @Armor-test/team-security
+
+# File type ownership
+*.gradle @Armor-test/unit-test @Armor-test/squad-payments
+*.scss @Armor-test/squad-product @Armor-test/grp-integration
+*.properties @Armor-test/squad-reporting @Armor-test/squad-search
+*.js @Armor-test/dept-ui @Armor-test/squad-api @Armor-test/squad-research
+*.cs @Armor-test/unit-design @Armor-test/squad-payments
+*.scala @Armor-test/squad-ux @Armor-test/squad-cache @Armor-test/grp-integration
+*.java @Armor-test/squad-ml @Armor-test/squad-payments
+*.html @Armor-test/grp-search @Armor-test/dept-automation
+*.tsx @Armor-test/dept-release @Armor-test/team-reporting
+*.rs @Armor-test/grp-search @Armor-test/squad-ux
+*.swift @Armor-test/dept-data @Armor-test/grp-ui
+*.graphql @Armor-test/dept-security @Armor-test/squad-qa @Armor-test/squad-frontend
+
+# Security and special files
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
+package.json @Armor-test/dependency-team @Armor-test/security
